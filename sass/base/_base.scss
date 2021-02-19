@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  // This defines what 1rem is
+  font-size: 62.5%;
+} //1 rem = 10px; 10px/16px = 62.5%
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  text-align: center;
+  font-family: $secondary-font;
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: $primary-color;
+  font-family: $primary-font;
+  text-align: center;
+  font-weight: 300;
+}
+
+h2 {
+  color: $primary-color;
+  font-family: $secondary-font;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+h3 {
+  color: $white;
+  font-family: $secondary-font;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 0.5rem;
+}

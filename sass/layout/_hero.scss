@@ -1,0 +1,33 @@
+.hero {
+  padding: 3rem 3rem 0rem 3rem;
+
+  &__column--primary {
+    font-size: 3.2rem;
+    text-align: center;
+    font-family: $primary-font;
+
+    margin-bottom: 1rem;
+  }
+  &__column--secondary {
+    font-size: 1.8rem;
+    padding: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    font-family: $secondary-font;
+  }
+}
+
+.hero__bottom {
+  padding: 0rem 3rem;
+  &--container {
+    margin: 0 auto;
+    width: 30rem;
+    height: 15rem;
+  }
+  &--avatar {
+    width: 100%;
+    height: 100%;
+    filter: invert(59%) sepia(93%) saturate(3667%) hue-rotate(149deg)
+      brightness(90%) contrast(97%);
+  }
+}

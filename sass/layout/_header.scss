@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0rem;
+
+  &__logo {
+    width: 10rem;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+.btn {
+  font-family: $primary-font;
+  background-color: $white;
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.4s;
+  position: fixed;
+  font-size: 1.2rem;
+  top: 5rem;
+  right: 2rem;
+  border: 2px solid $primary-color;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+    background-color: $primary-color;
+    color: $white;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+}
