@@ -175,7 +175,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -18rem;
+  margin-top: -14rem;
   padding: 3rem;
 }
 
@@ -369,7 +369,6 @@ h3 {
 .footer {
   background-color: #131422;
   color: #fff;
-  height: 31vh;
 }
 
 .footer__logo {
