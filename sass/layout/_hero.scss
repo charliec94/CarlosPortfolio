@@ -5,8 +5,12 @@
     font-size: 3.2rem;
     text-align: center;
     font-family: $primary-font;
-
     margin-bottom: 1rem;
+
+    @media screen and (min-width: $laptop-screen) {
+      font-size: 4.8rem;
+      margin: 5rem 0 0 0;
+    }
   }
   &__column--secondary {
     font-size: 1.8rem;
@@ -14,6 +18,17 @@
     line-height: 2rem;
     text-align: center;
     font-family: $secondary-font;
+
+    @media screen and (min-width: $laptop-screen) {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+img.hero__column--avatar {
+  @media screen and (min-width: $desktop-screen) {
+    display: flex;
+    max-width: 500px;
   }
 }
 
@@ -23,11 +38,19 @@
     margin: 0 auto;
     width: 30rem;
     height: 15rem;
+
+    @media screen and (min-width: $tablet-screen) {
+      height: 22rem;
+    }
   }
   &--avatar {
     width: 100%;
     height: 100%;
     filter: invert(59%) sepia(93%) saturate(3667%) hue-rotate(149deg)
       brightness(90%) contrast(97%);
+  }
+
+  @media screen and (min-width: $laptop-screen) {
+    display: none;
   }
 }

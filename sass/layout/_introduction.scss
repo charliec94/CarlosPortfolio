@@ -5,11 +5,30 @@
   padding: 3rem;
   height: 75vh;
 
+  @media only screen and (min-width: $tablet-screen) {
+    height: 50vh;
+  }
+
+  @media screen and (min-width: $laptop-screen) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &__title {
     font-family: $primary-font;
     font-size: 2.4rem;
     padding: 1rem;
     text-align: center;
+
+    @media screen and (min-width: $laptop-screen) {
+      margin: 0 auto;
+      font-size: 3.2rem;
+      width: 60%;
+    }
+    @media screen and (min-width: $desktop-screen) {
+      width: 30%;
+    }
   }
   &__description {
     font-family: $secondary-font;
@@ -17,15 +36,30 @@
     padding: 1rem;
     text-align: center;
     line-height: 2.9rem;
+
+    @media screen and (min-width: $laptop-screen) {
+      width: 60%;
+      margin: 0 auto;
+      font-size: 2rem;
+    }
+
+    @media screen and (min-width: $desktop-screen) {
+      width: 45%;
+    }
   }
 }
 
 .columns {
   display: flex;
   flex-direction: column;
-
   margin-top: -14rem;
   padding: 3rem;
+
+  @media screen and (min-width: $laptop-screen) {
+    margin-top: -10rem;
+    flex-direction: row;
+    justify-content: center;
+  }
 
   .column {
     background-color: $white;
@@ -33,6 +67,11 @@
     margin-bottom: 2rem;
     border: 0.5px solid black;
     padding: 5rem 3rem;
+
+    @media screen and (min-width: $laptop-screen) {
+      border-radius: 0;
+      max-width: 40rem;
+    }
 
     &__primary {
       margin-bottom: 1rem;
@@ -63,5 +102,9 @@
     display: inline-block;
     filter: invert(77%) sepia(91%) saturate(4385%) hue-rotate(336deg)
       brightness(99%) contrast(91%);
+
+    @media screen and (min-width: $laptop-screen) {
+      display: block;
+    }
   }
 }

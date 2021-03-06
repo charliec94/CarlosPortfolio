@@ -13,6 +13,12 @@ html {
 img {
   width: 100%;
   overflow: hidden;
+
+  @media screen and (min-width: $laptop-screen) {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
 a,
@@ -52,4 +58,10 @@ h3 {
   text-align: center;
   font-size: 1.8rem;
   letter-spacing: 0.5rem;
+}
+
+.fixed-width {
+  @media screen and (min-width: $laptop-screen) {
+    width: 300px;
+  }
 }
